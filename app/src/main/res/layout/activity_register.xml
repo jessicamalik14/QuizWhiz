@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/radius"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4724E"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="103dp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="313dp"
+        android:layout_height="571dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831"
+        app:strokeWidth="-1dp">
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress1"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="200dp"
+            android:ems="10"
+            android:drawablePadding="5dp"
+            android:hint="E-mail"
+            android:drawableStart="@drawable/email_svgrepo_com"
+            android:inputType="textEmailAddress"
+            android:shadowColor="@color/black"
+            android:textColor="@color/black"
+            android:textColorHint="#7C7B7B"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword1"
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="280dp"
+            android:ems="10"
+            android:hint="Password"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/lock_alt_svgrepo_com"
+            android:inputType="textPassword"
+            android:textColorHint="#7C7B7B"
+
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+          android:layout_marginLeft="130dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/b2"
+
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="450dp"
+            android:backgroundTint="#A271FA"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            app:cornerRadius="10dp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="520dp"
+            android:textColor="#1B1A1A"
+            android:text="Already have an account?" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="520dp"
+            android:text="Login"
+            android:textColor="#7141C8" />
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Welcome"
+            android:textColor="#222121"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="80dp"
+            android:text="Login now to explore more."
+            android:textColor="#A271FA"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
